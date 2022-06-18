@@ -19,7 +19,12 @@ ul{
 .header ul{
     display: flex;
     position: absolute;
-    left: 200px;
+    left: 215px;
+    width: 160px;
+    height: 60px;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .header ul li{
@@ -27,7 +32,7 @@ ul{
     height: 40px;
     background-color: #a9004b;
     box-sizing: content-box;
-    border: 10px solid #FFF;
+    /* border: 10px solid #FFF; */
 }
 
 .main{
@@ -75,9 +80,11 @@ ul{
     }
 
     .header ul {
-        width: 200px;
-        display: block;
-        left: 65px;
+        display: flex;
+        left: 70px;
+        height: 160px;
+        width: 60px;
+        flex-direction: column;
     }
 
     .main{
@@ -92,11 +99,11 @@ ul{
 
     .right {
         width: 200px;
-        height: 200px;
+        height: 210px;
     }
 
     .right ul{
-        margin: 10px 30px;
+        margin: 20px 30px;
     }
     
     .right ul li{
