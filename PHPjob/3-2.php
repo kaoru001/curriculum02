@@ -9,21 +9,46 @@
 <body>
 
 <?php
-// $fruits = ["りんご" => "1", "みかん" => "2", "もも" => "3"];
 
-// foreach ($fruits as $n => $f) {
-//     function a($tanka,$kosu){
-//         $goukei = $tanka * $kosu;
-//         echo "${n}は${goukei}円です","<br>";
-//     };
-//     a(150,$f);
-// };
+// $fruits = [ 
+//     ['りんご',100,3], 
+//     ['みかん',50,3], 
+//     ['もも',500,6] 
+// ];
+$fruits = ["りんご" => "100", "みかん" => "50", "もも" => "500"];
+// $fruits_kosu = ["りんご" => "3", "みかん" => "3", "もも" => "6"];
+// $fruits_kosu = [1,1,1];
+// echo $fruits_kosu[0]."<br>";
 
-$fruits = ["りんご" => "300", "みかん" => "150", "もも" => "3000"];
+function a($tanka,$kosu){
+    $goukei = $tanka * $kosu;
+    return $goukei;
+};
+
 
 foreach ($fruits as $n => $f) {
-    echo "${n}は${f}円です","<br>";
-}
+    // $fruits_kosu = [1,1,2];
+    // foreach ($fruits_kosu as $fruits_kosus) {
+    //    $w = $fruits_kosus;
+    // };
+    echo "${n}は".a($f,3)."円です。","<br>";
+    // echo " $f[0]."は".a($f[1],$f[2])."円です。"","<br>";
+};
+
+// foreach ($fruits_tanka as $n => $t) {
+//     foreach ($fruits_kosu as $e => $k) {
+//         echo "${n}は".a($t,$k)."円です","";
+//     }
+    // echo " $f[0]."は".a($f[1],$f[2])."円です。"","<br>";
+// };
+
+
+
+// $fruits = ["りんご" => "300", "みかん" => "150", "もも" => "3000"];
+
+// foreach ($fruits as $n => $f) {
+//     echo "${n}は${f}円です","<br>";
+// }
 
 // 多分違うけどこれで一回出してみる
 // コメントアウトのは、どっかコピーで残しとく
