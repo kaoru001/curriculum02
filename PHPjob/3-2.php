@@ -27,11 +27,19 @@ function a($tanka,$kosu){
 
 
 foreach ($fruits as $n => $f) {
+    $fruits_kosu = [3,3,6];
+     if($n === "もも") {
+    echo "${n}は".a($f,$fruits_kosu[2])."円です。","<br>";
+    }else if($n === "みかん") {
+        echo "${n}は".a($f,$fruits_kosu[1])."円です。","<br>";
+    }else if($n === "りんご") {
+        echo "${n}は".a($f,$fruits_kosu[0])."円です。","<br>";
+    }
     // $fruits_kosu = [1,1,2];
     // foreach ($fruits_kosu as $fruits_kosus) {
     //    $w = $fruits_kosus;
     // };
-    echo "${n}は".a($f,3)."円です。","<br>";
+    // echo "${n}は".a($f,3)."円です。","<br>";
     // echo " $f[0]."は".a($f[1],$f[2])."円です。"","<br>";
 };
 
